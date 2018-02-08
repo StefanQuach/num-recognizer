@@ -1,3 +1,4 @@
+package recognizer;
 import recognizer.interfaces.Neuron;
 
 public class InputNeuron implements Neuron {
