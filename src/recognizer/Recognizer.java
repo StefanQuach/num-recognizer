@@ -1,12 +1,13 @@
 package recognizer;
 
 public class Recognizer {
-	private double[] sizes;
+	private int[] sizes;
 	private double[] biases;
 	private double[] weights;
 	
-	public Recognizer(double[] sizes) {
+	public Recognizer(int[] sizes) {
 		//initializing to random values
+		this.sizes = sizes; 
 	}
 	
 	public double[] output() {
