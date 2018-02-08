@@ -1,19 +1,23 @@
 package recognizer;
 
-import recognizer.interfaces.Neuron;
-
 public class Recognizer {
-	private Neuron[] inputs;
-	private Neuron[] first;
-	private Neuron[] second;
-	private Neuron[] output;
+	private double[] sizes;
+	private double[] biases;
+	private double[] weights;
 	
-	public Recognizer() {
-		inputs = new InputNeuron[28*28]; //inputs are 28x28 greyscale images
-		first = new SigmoidNeuron[16];	//first layer of 16 neurons
-		second = new SigmoidNeuron[16]; //second layer of 16 neurons
-		output = new SigmoidNeuron[11]; // 11 outputs, [0->9, null]
-		
-		//TODO initialize all the weights and biases for every neuron to a random value
+	public Recognizer(double[] sizes) {
+		//initializing to random values
+	}
+	
+	public double[] output() {
+		//FIXME stub
+		return null;
+	}
+	public static double[] randArray(int length) {
+		double[] rand = new double[length];
+		for (int i=0; i<length; i++) {
+			rand[i]=Math.random();
+		}
+		return rand;
 	}
 }
